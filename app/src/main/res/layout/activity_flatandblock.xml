@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".flatandblock">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/actionbar"
+        app:layout_constraintBottom_toTopOf="@+id/textViewFlatNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="48dp"
+            android:layout_height="39dp"
+            android:layout_alignBottom="@+id/buttonHome"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="-3dp"
+            android:background="@drawable/back"
+            tools:layout_editor_absoluteX="36dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <Button
+            android:id="@+id/buttonHome"
+            android:layout_width="33dp"
+            android:layout_height="34dp"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_marginStart="60dp"
+            android:layout_marginBottom="-5dp"
+            android:layout_toEndOf="@+id/textView"
+            android:background="@drawable/home"
+            tools:layout_editor_absoluteX="335dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Flat and Block Number"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="@android:color/background_light"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_below="@id/relativeLayout"
+        android:id="@+id/textViewFlatNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:layout_marginEnd="207dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Flat Number"
+        android:textColor="@color/navigation"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextFlatNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+    <EditText
+        android:id="@+id/editTextFlatNumber"
+        android:layout_width="356dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="Flat Number"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFlatNumber" />
+
+    <TextView
+        android:id="@+id/textViewBlockNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="186dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="9dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Block Number"
+        android:textColor="@color/navigation"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFlatNumber" />
+
+    <EditText
+        android:id="@+id/editTextBlockNumber"
+        android:layout_width="356dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="23dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Block Number"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/buttonContinue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBlockNumber" />
+
+    <Button
+        android:id="@+id/buttonContinue"
+        android:layout_width="301dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="41dp"
+        android:background="@drawable/button1"
+        android:text="Continue"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextBlockNumber" />
+</androidx.constraintlayout.widget.ConstraintLayout>

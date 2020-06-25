@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".verifyotp"
+    android:background="@color/bgrey">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/actionbar">
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="48dp"
+            android:layout_height="39dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/back"
+            tools:layout_editor_absoluteX="36dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <Button
+            android:id="@+id/buttonHome"
+            android:layout_width="33dp"
+            android:layout_height="34dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="19dp"
+            android:background="@drawable/home"
+            tools:layout_editor_absoluteX="335dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Enter OTP"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="@android:color/background_light"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="1dp"
+            android:layout_height="90.667dp"
+            android:layout_marginTop="120dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittt"
+            android:focusable="true"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="53.33dp"
+            android:textStyle="bold"
+
+            ></EditText>
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="1dp"
+            android:layout_height="90.667dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="120dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittt"
+            android:focusable="true"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="53.33dp"
+            android:textStyle="bold"></EditText>
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="1dp"
+            android:layout_height="90.667dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="120dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittt"
+            android:focusable="true"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="53.33dp"
+            android:textStyle="bold"
+
+            ></EditText>
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="1dp"
+            android:layout_height="90.667dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="120dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittt"
+            android:focusable="true"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="53.33dp"
+            android:textStyle="bold"></EditText>
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="1dp"
+            android:layout_height="90.667dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="120dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittt"
+            android:focusable="true"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="53.33dp"
+            android:textStyle="bold"></EditText>
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="1dp"
+            android:layout_height="90.667dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="120dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittt"
+            android:focusable="true"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="53.33dp"
+            android:textStyle="bold"></EditText>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="380dp"
+        android:layout_height="69.33dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button1"
+        android:clickable="true"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="SUBMIT"
+        android:textColor="#FFFFFF"
+        android:textSize="18.66dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.94"></Button>
+</RelativeLayout>
